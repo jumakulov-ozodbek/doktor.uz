@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./public/**/*.{html,js}"],
   theme: {
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('/assets/svg/BG.svg')",
-      }
+        'hero-pattern': "url('/assets/img/BG.svg')",
+      },
     },
   },
   plugins: [],
