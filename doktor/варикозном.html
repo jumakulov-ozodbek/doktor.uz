@@ -11,18 +11,37 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<style>
+    button:hover {
+        background-color: cadetblue;
+
+
+    }
+
+    h1:hover {
+        color: rgba(247, 106, 245, 0.862);
+    }
+    .btn:hover{
+        background-color: white;
+        color:rgb(100, 158, 246);
+        border:2px solid rgb(56, 194, 240);
+    }
+</style>
 
 <body>
     <div class="bg-[url('/assets/svg/BG.svg')] bg-cover bg-center w-full h-72 sm:h-80 md:h-96 lg:h-128">
         <div class="container mx-auto p-4 sm:p-6 md:p-8 relative z-10 text-white">
             <h1 class="text-2xl  sm:text-3xl md:text-4xl lg:text-4xl font-bold text-blue-500 mb-4 text-left">
-                Хирургическое лечение трофических язв<br> при варикозном расширении вен
+                Хирургическое лечение варикозных вен<br> без госпитализации в стационар
             </h1>
             <p class="text-gray-950 text-left sm:text-base md:text-lg lg:text-xl">
                 если у вас остались вопросы по подготовке к операции<br>
                 на венах, задайте мне их через сайт, e-mail, смс, viber <br>
                 или whatsapp
             </p>
+            <button
+            class=" w-80 h-10 border-spacing-4 bg-pink-500 text-white rounded-2xl mt-10"><a
+                href="#">Смотреть все отзывы</a> </button>
         </div>
     </div>
 
@@ -45,7 +64,7 @@
     <div class=" container mx-auto  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="bg-blue-700 rounded-xl shadow-lg p-6">
             <div class="flex items-center gap-4 mb-4">
-                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
+                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center animate-spin">
                     <i class="ri-group-fill"></i>
                 </div>
             </div>
@@ -57,9 +76,9 @@
                 <p>Напишите мне об этом в Viber, WhatsApp или отправьте сообщение на электронную почту.</p>
             </div>
         </div>
-        <div class="bg-blue-700 rounded-xl shadow-lg p-6">
+        <div class="bg-blue-700 rounded-xl shadow-lg p-6 ">
             <div class="flex items-center gap-4 mb-4">
-                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
+                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center animate-spin">
                     <a href=""> <i class="ri-hourglass-2-fill"></i></a>
                 </div>
             </div>
@@ -76,7 +95,7 @@
         </div>
         <div class="bg-blue-700 rounded-xl shadow-x; p-6">
             <div class="flex items-center gap-4 mb-4">
-                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
+                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center animate-spin">
                     <a href><i class="ri-app-store-fill"></i></a>
                 </div><br>
             </div>
@@ -84,7 +103,7 @@
                 <h2 class="font-bold text-lg text-yellow-400">СКОЛЬКО ДЛИТСЯ</h2>
             </div>
             <div class="text-white">
-                <ul class="list-disc pl-5 space-y-2">
+                <ul class="list-disc pl-5 space-y-2 ">
                     <li>в день операции — 1,5-2 часа;</li>
                     <li>в день контрольного осмотра — 30 минут.</li>
                 </ul>
@@ -111,7 +130,8 @@
 
 
     </div>
-    <div class="container bg-blue-200 mx-auto p-4 sm:p-6 md:p-8 relative z-10 flex items-center justify-between ">
+    <div
+        class="container bg-blue-200 mx-auto p-4 sm:p-6 md:p-8 relative z-10 flex items-center justify-between flex-wrap animate-pulse ">
         <div class="bg-white rounded-xl shadow-x; p-6 w-64 h-80">
             <b class="text-cyan-500">ЭВЛК</b>
             <div class="text-white">.</div>
@@ -148,9 +168,10 @@
                 проступают вены над поверхностью кожи, необходима операция.</p>
         </div>
     </div>
-    <div class="container bg-blue-200 mx-auto p-4 sm:p-6 md:p-8 relative z-10 flex items-center justify-between gap-5 ">
+    <div
+        class="container bg-blue-200 mx-auto p-4 sm:p-6 md:p-8 relative z-10 flex items-center justify-between gap-5  flex-wrap">
         <div>
-            <button class="bg-blue-500 w-96 rounded-lg h-10 text-white "><a href=""><i
+            <button class="bg-blue-500 w-96 rounded-lg h-10 text-white "><a href="#"><i
                         class="ri-shake-hands-line"></i></a>pokazaniya:</i></button>
             <p>Современные хирургические методы лечения варикоза малоинвазивные, не требуют<br> госпитализации,
                 выполняются
@@ -163,7 +184,7 @@
             <p>*при повышенном риске развития осложнений;</p>
         </div>
         <div>
-            <button class="bg-blue-500 w-96 rounded-lg h-10 text-white"><a href=""><i
+            <button class="bg-blue-500 w-96 rounded-lg h-10 text-white"><a href="#"><i
                         class="ri-hand"></i></a>pokazaniya:</i></button>
             <p>Обычно удаление варикозных вен не проводится при тяжелых состояниях:</p>
             <p>*наличие значимого косметического и эстетического дефекта;</p>
@@ -203,17 +224,123 @@
                 перемежающейся пневмокомпресии. Он незаменим для людей с ограниченной подвижностью, имеющими артрозы, а
                 для пациентов без ограничений — является просто приятной процедурой. 
                 На следующий день буду ждать вас в стационаре для повторного осмотра и сканирования ноги, </p>
-                <div>.</div>
+            <div>.</div>
             <p>дам рекомендации по ношению компрессионного трикотажа и выпишу лекарства для ускорения заживления. 
                 Через день после операции вы можете вернуться к обычной жизни. На полное восстановление понадобится
                 около 2 недель – более подробно расскажу при выписке.</p>
         </div>
     </div>
-    <div class="container mx-auto p-6 bg-slate-200">
+    <div class="container mx-auto p-6 bg-slate-200 ">
         <div>
             <h1 class="text-2xl  sm:text-3xl md:text-4xl lg:text-4xl font-bold text-black mb-4 text-left">
                 РЕЗУЛЬТАТЫ ЛАЗЕРНОЙ КОАГУЛЯЦИИ ВЕН: ФОТОГРАФИИ ДО И ПОСЛЕ ПРОЦЕДУРЫ
             </h1>
+        </div>
+    </div>
+    <div class="container mx-auto p-6 bg-slate-200 flex justify-between items-center gap-5 ">
+        <div>
+            <img src="../assets/Карточка 1.png">
+        </div>
+        <div>
+            <img src="/assets/Карточка 2.png">
+        </div>
+        <div>
+            <img src="/assets/Карточка 3.png">
+        </div>
+        <div>
+            <img src="/assets/Карточка 4.png">
+        </div>
+
+    </div>
+    <div class="container mx-auto p-6 bg-slate-200 flex justify-between items-center gap-5 ">
+        <div>
+            <img src="../assets/Карточка 5.png">
+        </div>
+        <div>
+            <img src="/assets/Карточка 6.png">
+        </div>
+        <div>
+            <img src="/assets/Карточка 7.png">
+        </div>
+        <div>
+            <img src="/assets/Карточка 8 (1).png">
+        </div>
+    </div>
+    <div class="container mx-auto p-6 bg-white flex justify-between ">
+        <div>
+            <h1 class="text-2xl  sm:text-3xl md:text-4xl lg:text-4xl font-bold text-black mb-4 text-left ">
+                отзывы моих пациентов
+            </h1>
+        </div>
+        <div>
+            <button
+                class="border-blue-500 border-solid w-80 h-10 border-spacing-4 bg-blue-700 text-white rounded-2xl btn"><a
+                    href="#">Смотреть все отзывы</a> </button>
+            <span>
+                <button class="border-blue-600  w-80 h-10 border-spacing-6 bg-blue-400  rounded-2xl"><a
+                        href="">Оставить</a></button>
+            </span>
+        </div>
+    </div>
+    <div class="container mx-auto p-6  bg-white  flex justify-between items-center gap-5 flex-wrap">
+        <div class="bg-slate-200 rounded-lg p-20">
+            <b>Ольга вячеславовна</b>
+            <p>
+                Обратилась с варикозом, беспокоила боль в ноге и тяжесть. Врач просто прекрасный, очень чуткий и
+                внимательный. Быстро провела операцию и сопровождала ее пояснениями. Очень подробное информирование,
+                вопросов почти не оставалось, так как врач все детально рассказывает. Всегда спрашивала как я себя
+                чувствую во время операции, даже дали конфету для отвлечения. Советую!
+            </p>
+        </div>
+        <div class="bg-slate-200 rounded-lg p-20">
+            <b>Елена владимировна</b>
+            <p>
+                На мой взгляд, Астафьева Евгения Валерьевна — отличный врач. Она правильно поставила диагноз, и я
+                осталась довольна специалистом. Я приходила к ней 1 раз. У меня выходят язвы, и я думала, это проблема
+                по флебологии, но к сожалению, это связано с ревматологией. Астафьева Е.В. не проводила УЗИ, но
+                проконсультировала меня и поставила диагноз «неуточнённый васкулит», порекомендовала только обратиться к
+                ревматологу. Приём занял минут 20. На мой взгляд, этот доктор вежливая, доброжелательная, понимающая и
+                честная, никаких вопросов к ней нет.
+            </p>
+        </div>
+    </div>
+    <div class="container mx-auto p-6 bg-slate-200 rounded-xl">
+        <div>
+            <h1 class="text-2xl  sm:text-3xl md:text-4xl lg:text-4xl font-bold text-black mb-4 text-left">
+                полезные статьи на тему варикозная болезнь
+            </h1>
+        </div>
+    </div>
+    <div class="container mx-auto p-6 bg-slate-200 flex justify-between items-center rounded-lg flex-wrap">
+        <div class="bg-white rounded-lg w-96 p-2 ">
+            <img src="/assets/Фото 1.png">
+            <b>ОТКУДА БЕРЕТСЯ ВАРИКОЗ НА НОГАХ,  ЧТО ЭТО И КАК С НИМ БОРОТЬСЯ?</b>
+            <p>Варикозная болезнь вен нижних конечностей — это заболевание, характеризующееся нарушением
+                функционирования вен на ногах. Может протекать без видимых признаков или иметь явный венозный рисунок –
+                все зависит от типа и стадии. Неотъемлемой составляющей этой болезни является нарушение работы венозных
+                клапанов, лишившись которых, вена перестает функционировать должным образом. Это приводит к появлению
+                расширенных вен и ухудшению кровообращения в ноге.</p>
+
+        </div>
+        <div class="bg-white rounded-lg w-96 p-2 ">
+            <img src="/assets/Фото 2.png">
+            <b>ОТКУДА БЕРЕТСЯ ВАРИКОЗ НА НОГАХ,  ЧТО ЭТО И КАК С НИМ БОРОТЬСЯ?</b>
+            <p>Варикозная болезнь вен нижних конечностей — это заболевание, характеризующееся нарушением
+                функционирования вен на ногах. Может протекать без видимых признаков или иметь явный венозный рисунок –
+                все зависит от типа и стадии. Неотъемлемой составляющей этой болезни является нарушение работы венозных
+                клапанов, лишившись которых, вена перестает функционировать должным образом. Это приводит к появлению
+                расширенных вен и ухудшению кровообращения в ноге.</p>
+
+        </div>
+        <div class="bg-white rounded-lg w-96 p-2 ">
+            <img src="/assets/Фото 3.png">
+            <b>ОТКУДА БЕРЕТСЯ ВАРИКОЗ НА НОГАХ,  ЧТО ЭТО И КАК С НИМ БОРОТЬСЯ?</b>
+            <p>Варикозная болезнь вен нижних конечностей — это заболевание, характеризующееся нарушением
+                функционирования вен на ногах. Может протекать без видимых признаков или иметь явный венозный рисунок –
+                все зависит от типа и стадии. Неотъемлемой составляющей этой болезни является нарушение работы венозных
+                клапанов, лишившись которых, вена перестает функционировать должным образом. Это приводит к появлению
+                расширенных вен и ухудшению кровообращения в ноге.</p>
+
         </div>
     </div>
 </body>
