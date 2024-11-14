@@ -1,34 +1,53 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
+
 <body>
-<header class="flex items-center justify-between px-[260px] py-[120px] mx-auto container font-body">
-    <div class="">
-        <h1 class="text-blue-500 text-3xl uppercase font-bold w-[628px] relative bottom-5">Контакты <br> и график работы</h1>
-        <p class="font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua.</p>
-        <div class="flex items-center gap-5 mt-20">
-            <a href="#" class="flex items-center gap-3 bg-pink-300 text-white px-8 py-5 rounded-full shadow-2xl">
-                <span class="font-semibold">Задать вопрос</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                </svg>
-            </a>            
-            <p class="text-sm">
-                Нажмите кнопку “Задать вопрос” и заполните <br> простую форму, где подробно опишите свой вопрос, <br> и я обязательно отвечу Вам в ближайшее время.
-            </p>
-        </div>   
-        <div class="flex items-center mt-20 gap-20 bg-[#3575DE] rounded-lg px-5 py-4 text-white font-semibold">
-            <p class="">Читайте отзывы обо мне на</p>
-            <img class="cursor-pointer" src="../assets/svg/pro 1.svg" alt="">
-        </div>
-    </div>
-    <div class="w-full h-full relative -top-11 left-28">
-        <img src="../assets/Фото.png" alt="">
-    </div>
-</header>             
+    <header
+        class="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-[260px] py-10 lg:py-[120px] mx-auto container font-body">
+        <div class="text-center lg:text-left">
+            <h1
+                class="text-blue-500 text-2xl lg:text-3xl uppercase font-bold lg:w-[628px] relative bottom-2 lg:bottom-5">
+                Контакты <br class="hidden lg:block"> и график работы</h1>
+            <p class="font-semibold mt-2 lg:mt-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br
+                    class="hidden lg:block"> sed do eiusmod tempor incididunt ut labore et dolore <br
+                    class="hidden lg:block"> magna aliqua.</p>
+
+            <!-- Button and text section -->
+            <div class="flex flex-col lg:flex-row items-center gap-5 mt-10 lg:mt-20">
+                <a href="#"
+                    class="flex items-center gap-3 bg-pink-300 text-white px-8 py-3 lg:py-5 rounded-full shadow-2xl">
+                    <span class="font-semibold">Задать вопрос</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                    </svg>
+                </a>
+                <p class="text-sm text-center lg:text-left">
+                    Нажмите кнопку “Задать вопрос” и заполните <br class="hidden lg:block"> простую форму, где подробно
+                    опишите свой вопрос, <br class="hidden lg:block"> и я обязательно отвечу Вам в ближайшее время.
+                </p>
+            </div>
+
+            <!-- Image section -->
+            <div class="w-full h-full relative lg:-top-11 lg:left-28 mt-10 lg:mt-0">
+                <img class="w-48 lg:w-auto mx-auto lg:mx-0" src="../assets/Фото.png" alt="">
+            </div>
+
+            <!-- Prodoctorov section -->
+            <div
+                class="flex flex-col lg:flex-row items-center mt-10 lg:mt-20 gap-5 lg:gap-20 bg-[#3575DE] rounded-lg px-5 py-4 text-white font-semibold">
+                <p>Читайте отзывы обо мне на</p>
+                <img class="cursor-pointer w-32 lg:w-auto" src="../assets/svg/pro 1.svg" alt="">
+            </div>
+
+    </header>
 </body>
+
 </html>
