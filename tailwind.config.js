@@ -9,7 +9,6 @@ module.exports = {
       'display': ['Oswald'],
       'body': ['"Roboto"'],
     },
-    extend: {},
     extend: {
       backgroundImage: {
         'hero-pattern': "url('/assets/img/BG.svg')",
