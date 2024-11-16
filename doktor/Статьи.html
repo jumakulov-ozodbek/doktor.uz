@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статьи</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="w-full max-w-6xl mx-auto px-4 py-6">
+        <!-- Articles heading - responsive text size -->
+        <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-500 mb-6">
+            СТАТЬИ
+        </h1>
+        
+        <!-- Sorting section -->
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3 bg-gray-50 p-4 rounded-lg">
+            <span class="text-gray-600 font-medium">
+                СОРТИРОВКА:
+            </span>
+            
+            <div class="flex flex-wrap gap-4">
+                <button class="flex items-center gap-2 px-3 py-2 rounded-md transition-colors bg-blue-500 text-white hover:bg-blue-600">
+                    От новых к старым
+                </button>
+                
+                <button class="flex items-center gap-2 px-3 py-2 rounded-md transition-colors hover:bg-gray-200">
+                    От старых к новым
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
