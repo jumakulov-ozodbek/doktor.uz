@@ -7,11 +7,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Responsive Navbar</title>
 </head>
-<body class="bg-primary font-sans">
+<body class=" font-sans">
   <div class="relative bg-blue-200 shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-end">
       <div class="flex flex-wrap items-center gap-4 text-gray-600 text-sm">
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-2 cursor-pointer">
           <img src="../assets/svg/Vector (4).svg" alt="" class="w-4 h-4">
           <span class="font-semibold hover:text-blue-600">Время работы: с 9:00 до 20:00</span>
         </div>
@@ -25,7 +25,7 @@
           <a href="tel:+78000000000" class="font-semibold hover:text-blue-600">+7 (800) 000-00-00</a>
         </div>
       </div>
-      <button onclick="toggleMenu()" class="absolute top-1 right-4 text-gray-600 text-3xl focus:outline-none md:hidden">
+      <button onclick="toggleMenu()" class="absolute top-1 right-4 text-gray-600 text-3xl  md:hidden">
         &#9776;
       </button>
     </div>
@@ -38,35 +38,20 @@
       </div>
       <ul id="menu" class="hidden flex-col space-y-2 mt-4 md:flex md:flex-row md:space-x-6 md:mt-0 md:space-y-0">
         <li class="hover:text-blue-600"><a href="#">Обо мне</a></li>
-        <div class="relative inline-block text-left">
-          <button onclick="toggleDropdown()" class=>
-            Услуги и цены
-          </button>
-          <div id="dropdownMenu"
-            class="hidden absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-10">
-            <div class="py-1">
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Консультация флеболога</a>
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Лазерная коагуляция вен</a>
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Минифлебэктомия</a>
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100">Склеротерапия вен под УЗИ</a>
-            </div>
-          </div>
-        </div>
-        <script>
-          function toggleDropdown() {
-            const dropdownMenu = document.getElementById('dropdownMenu');
-            dropdownMenu.classList.toggle('hidden');
-          }
-
-          window.addEventListener('click', function (e) {
-            const dropdownMenu = document.getElementById('dropdownMenu');
-            const button = e.target.closest('button');
-            if (!button && !e.target.closest('#dropdownMenu')) {
-              dropdownMenu.classList.add('hidden');
-            }
-          });
-        </script>
-
+        <div class="relative inline-block text-left group">
+  <button class="hover:text-blue-600">
+    Услуги и цены
+  </button>
+  <div
+    class="hidden absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-10 group-hover:block">
+    <div class="py-1 font-sans">
+      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-200 hover:text-blue-700">Консультация флеболога</a>
+      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-200 hover:text-blue-700">Лазерная коагуляция вен</a>
+      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-200 hover:text-blue-700">Минифлебэктомия</a>
+      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-200 hover:text-blue-700">Склеротерапия вен под УЗИ</a>
+    </div>
+  </div>
+</div>
         <li class="hover:text-blue-600"><a href="#">Лечение</a></li>
         <li class="hover:text-blue-600"><a href="#">Пациентам</a></li>
         <li class="hover:text-blue-600"><a href="#">Отзывы</a></li>
