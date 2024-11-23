@@ -6,7 +6,6 @@
     <title>uslugi seni.html</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.js"></script>
-    <link rel="stylesheet" href="../public/style.css">
 </head>
 <body>
  <div class="container">
@@ -75,7 +74,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container ">
         <div class="Section1 bg-[#F3F6F9]">
             <div class="text-start p-8">
                 <h1 class="text-3xl font-bold cursor-pointer text-[#3575DE] hover:text-black">
@@ -106,41 +105,97 @@
            <div>   
         </div>
     </div>
-   <div class="container">
-    <div class="Section4 bg-[#3575DE]">
-        <h1 class="text-white text-3xl mb-3 p-4">Цены на мои услуги</h1>
-        <p class="text-white p-4 gap-5">Указанные здесь цены устанавливаются администрацией медицинского учреждения, в котором я работаю. Несмотря на то, что они являются максимально<br> приближенными к действительности, они иногда могут немного отличаться. Обычно это происходит в случае их изменения. Это происходит редко и я стараюсь <br> оперативно реагировать, чтобы вы всегда имели корректную информацию. Представленные цены актуальны на 01/06/2019.</p>
-<!-- Table with Tailwind CSS -->
-<table class="w-full sm:max-w-[600px] md:max-w-[800px] lg:max-w-[1000px] xl:max-w-[1200px] table-auto border-collapse text-sm mx-auto rounded-lg overflow-hidden mt-10">
-    <thead>
-      <tr class="bg-gray-200 border-b border-gray-400">
-        <th class="p-3 text-left rounded-tl-lg">Флебология (лечение заболеваний вен нижних конечностей)</th>
-        <th class="p-3 text-left rounded-tr-lg">Стоимость</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="hover:bg-blue-100 border-b border-gray-400 bg-white">
-        <td class="p-3">УЗИ вен (дуплексное сканирование)</td>
-        <!-- "Points" column with vertical line -->
-        <td class="border-l border-gray-400 p-3 bg-white rounded-br-lg">от 1800 ₽</td>
-      </tr>
-      <tr class="hover:bg-blue-100 border-b border-gray-400 bg-white">
-        <td class="p-3">Первичная консультация флеболога</td>  
-        <!-- "Points" column with vertical line -->
-        <td class="border-l border-gray-400 p-3 bg-white">от 3000 ₽</td>
-      </tr>
-      <tr class="hover:bg-blue-100 border-b border-gray-400 bg-white">
-        <td class="p-3">Повторная консультация флеболога</td>
-        <!-- "Points" column with vertical line -->
-        <td class="border-l border-gray-400 p-3 bg-white">от 2500 ₽</td>
-      </tr>
-      </tr>
-    </tbody>
-  </table>
-  </div>
-  </div>
-  <div class="container">
-  <div class="Section5">
+   <div class="container mt-20">
+   
+       
+            <div class="Section4 bg-[#3575DE] h-auto relative">
+                <h1 class="text-white text-3xl mb-3 p-4 relative z-10">
+                    Цены на мои услуги
+                </h1>
+                <p class="text-white p-4 gap-5 mt-10">
+                    Указанные здесь цены устанавливаются администрацией медицинского учреждения, в котором я работаю. Несмотря на то, что они являются максимально
+                    приближенными к действительности, они иногда могут немного отличаться. Обычно это происходит в случае их изменения. Это происходит редко и я стараюсь
+                    оперативно реагировать, чтобы вы всегда имели корректную информацию. Представленные цены актуальны на 01/06/2019.
+                </p>
+               
+                <div class="overflow-x-auto">
+                    <table class="w-full sm:max-w-[600px] md:max-w-[800px] lg:max-w-[1000px] xl:max-w-[1200px] table-auto border-collapse text-sm mx-auto rounded-lg overflow-hidden mt-16 mb-10">
+                        <thead>
+                            <tr class="bg-gray-200 border-b border-gray-400">
+                                <th class="p-3 text-left rounded-tl-lg">Флебология (лечение заболеваний вен нижних конечностей)</th>
+                                <th class="p-3 text-left rounded-tr-lg">Стоимость</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-blue-100 border-b border-gray-400 bg-white">
+                                <td class="p-3">УЗИ вен (дуплексное сканирование)</td>
+                                <td class="border-l border-gray-400 p-3 bg-white rounded-br-lg">от 1800 ₽</td>
+                            </tr>
+                            <tr class="hover:bg-blue-100 border-b border-gray-400 bg-white">
+                                <td class="p-3">Первичная консультация флеболога</td>
+                                <td class="border-l border-gray-400 p-3 bg-white">от 3000 ₽</td>
+                            </tr>
+                            <tr class="hover:bg-blue-100 border-b border-gray-400 bg-white">
+                                <td class="p-3">Повторная консультация флеболога</td>
+                                <td class="border-l border-gray-400 p-3 bg-white">от 2500 ₽</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container mx-auto px-4">
+            <div class="Section5 mt-16 relative">
+                <h1 class="text-3xl text-black font-bold text-start sm:text-4xl md:text-5xl lg:text-6xl">
+                    Вот почему мне доверяют
+                </h1>
+            </div>
+        </div>
+        
+    <!-- Grids -->
+<div class="flex flex-wrap gap-8 p-8 justify-center mt-10">
+    <!-- Item 1 -->
+    <div class="bg-[#3575DE] text-white p-6 rounded-lg shadow-2xl flex flex-col items-start justify-start w-full sm:w-[300px] md:w-[320px] md:h-[320px] lg:w-[220px]">
+        <div class="relative">
+            <img src="../assets/img/Ellipse 1 (1).png" alt="">
+            <span class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl text-[blue] font-bold">01</span>
+        </div>
+        <h2 class="text-lg font-semibold mb-4 text-[#FFE4A1] cursor-pointer mt-2">Большой опыт работы врачом</h2>
+        <p class="cursor-pointer text-sm">У меня большой стаж работы в медицине, поэтому я знаю все тонкости человеческого организма, работаю исключительно полагаясь свои знания </p>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="bg-[#3575DE] text-white p-6 rounded-lg shadow-2xl flex flex-col items-start justify-start w-full sm:w-[300px] md:w-[320px] md:h-[320px] lg:w-[220px]">
+        <div class="relative">
+            <img src="../assets/img/Ellipse 1 (1).png" alt="">
+            <span class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl text-[blue] font-bold">02</span>
+        </div>
+        <h2 class="text-lg font-bold mb-4 text-[#FFE4A1] cursor-pointer mt-2">Бесплатные консультации</h2>
+        <p class="cursor-pointer text-sm">Мои пациенты всегда могут обратиться со своим вопросом по телефону, Viber, WhatsApp.  Бесплатно проконсцультирую по электронной почте.  </p>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="bg-[#3575DE] text-white p-6 rounded-lg shadow-2xl flex flex-col items-start justify-start w-full sm:w-[300px] md:w-[320px] md:h-[320px] lg:w-[220px]">
+        <div class="relative">
+            <img src="../assets/img/Ellipse 1 (1).png" alt="">
+            <span class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl text-[blue] font-bold">03</span>
+        </div>
+        <h2 class="text-lg font-bold mb-4 text-[#FFE4A1] cursor-pointer mt-2">Прохожу обучение и тренинги</h2>
+        <p class="cursor-pointer text-sm">Я регулярно повышаю квалификацию, посещаю научные конференции и мастер-классы. Вы можете быть уверены, что предлагаемое мною.</p>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="bg-[#3575DE] text-white p-6 rounded-lg shadow-2xl flex flex-col items-start justify-start w-full sm:w-[300px] md:w-[320px] md:h-[320px] lg:w-[220px]">
+        <div class="relative">
+            <img src="../assets/img/Ellipse 1 (1).png" alt="">
+            <span class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl text-[blue] font-bold">04</span>
+        </div>
+        <h2 class="text-lg font-bold mb-4 text-[#FFE4A1] cursor-pointer mt-2">Кандидат медицинских наук</h2>
+        <p class="cursor-pointer text-sm">Ученая степень помогает мне анализировать научные данные, в т.ч. и зарубежных авторов. мой подход в лечении и диагностике основан.</p>
+    </div>
+</div>
+
 
   </div>
   </div>
